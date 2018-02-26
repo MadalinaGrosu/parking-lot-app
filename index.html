@@ -5,27 +5,11 @@
         <title>Parking</title>
         <!-- Importing the angular.js script -->
         <script src="./node_modules/angular/angular.js"></script>
-        <script>
-            // Creating the module called parking
-            var parking = angular.module("parking", []);
-            // Registering the parkingCtrl to the parking module
-            parking.controller("parkingCtrl", function ($scope) {
-                // Binding the car's array to the scope
-                $scope.cars = [
-                    {plate: '6MBV006'},
-                    {plate: '5BBM299'},
-                    {plate: '5AOJ230'}
-                ];
-                // Binding the park function to scope
-                $scope.park = function (car) {
-                    $scope.cars.push(angular.copy(car));
-                    delete $scope.car;
-                };
-            });
-        </script>
+        <script src="app/js/app.js"></script>
+        <script src="app/js/controllers.js"></script>
     </head>
     <!-- Attaching the view to the parkingCtrl-->
-    <body ng-controller="prakingCtrl">
+    <body ng-controller="parkingCtrl">
         <h3>[Packt] Parking</h3>
         <table>
             <thead>
