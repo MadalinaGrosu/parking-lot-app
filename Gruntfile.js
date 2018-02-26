@@ -17,6 +17,12 @@ module.exports = function (grunt) {
                 src: ["dist/js/scripts.js"],
                 dest: "dist/js/scripts.min.js"
             }
+        },
+        copy: {
+            dist: {
+                src: ["index.html"],
+                dest: "dist/"
+            }
         }
     });
 
@@ -24,6 +30,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-contrib-concat");
     grunt.loadNpmTasks("grunt-contrib-uglify");
+    grunt.loadNpmTasks("grunt-contrib-copy");
 
-    grunt.registerTask("default", ["clean", "jshint", "concat", "uglify"]);
+    grunt.registerTask("default", ["clean", "jshint", "concat", "uglify", "copy"]);
 };
