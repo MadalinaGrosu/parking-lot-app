@@ -1,0 +1,26 @@
+{
+  "name": "parking-lot-app",
+  "version": "1.0.0",
+  "description": "Parking Lot Application",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "^1.6.9"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.7.1",
+    "@angular/core": "^1.7.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadalinaGrosu/parking-lot-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadalinaGrosu/parking-lot-app/issues"
+  },
+  "homepage": "https://github.com/MadalinaGrosu/parking-lot-app#readme"
+}
