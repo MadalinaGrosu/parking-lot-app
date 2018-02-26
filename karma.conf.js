@@ -15,10 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        'node_modules/angular/angular.js',
-        'app/js/app.js',
-        'app/js/controllers.js',
-        'test/parkingCtrlSpec.js'
+        //'./app/js/*.js',
+        './test/parkingCtrl.spec.js'
     ],
 
 
