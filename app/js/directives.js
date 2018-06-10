@@ -1,5 +1,7 @@
 parking.directive("alert", function () {
     return {
-        templateUrl: "alert.html"
+        restrict: 'E',
+        templateUrl: "alert.html",
+        replace: true
     };
 })
