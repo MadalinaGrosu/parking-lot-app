@@ -1,13 +1,12 @@
 parking.controller("parkingCtrl", function ($scope) {
-    // Binding the car's array to the scope
-    $scope.cars = [
-        {plate: '6MBV006'},
-        {plate: '5BBM299'},
-        {plate: '5AOJ230'}
-    ];
-    // Binding the park function to scope
+    $scope.appTitle = "[Packt] Parking";
+    $scope.cars = [];
+    $scope.colors = ["White", "Black", "Blue", "Red", "Silver"];
+    
     $scope.park = function (car) {
-        $scope.cars.push(angular.copy(car));
+        car.entrance = new Date();
+
+        $scope.cars.push(car);
         delete $scope.car;
     };
 });

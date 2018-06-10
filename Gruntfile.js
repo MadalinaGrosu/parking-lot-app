@@ -38,5 +38,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-copy");
     grunt.loadNpmTasks("grunt-karma");
 
-    grunt.registerTask("default", ["clean", "jshint", "concat", "uglify", "copy", "karma"]);
+    grunt.registerTask("default", ["clean", "jshint", "concat", "uglify", "copy"]);
 };
