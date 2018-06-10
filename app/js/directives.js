@@ -3,10 +3,17 @@ parking.directive("alert", function () {
         restrict: 'E',
         scope: {
             topic: '=',
-            description: '=',
-            close: '&'
+            description: '='
         },
         templateUrl: "alert.html",
-        replace: true
+        replace: true,
+        transclude: true,
+        link: function (scope, element, attrs, ctrl, transcludeFn) {
+            element.bind("click", function () {
+                scope.$apply(function () {
+                    scope.hideAlert = !scope.hideAlert;
+                });
+            });
+        }
     };
 })

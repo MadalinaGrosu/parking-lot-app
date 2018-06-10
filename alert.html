@@ -1,9 +1,8 @@
-<div class='alert'>
+<div class='alert' ng-hide="hideAlert">
     <span class='alert-topic'>
         <span ng-bind="topic"></span>
     </span>
     <span class='alert-description'>
-        <span ng-bind="description"></span>
+        <span ng-bind="description" ng-transclude></span>
     </span>
-    <a href="" ng-click="close()">Close</a>
 </div>
