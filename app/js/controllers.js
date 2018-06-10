@@ -12,4 +12,8 @@ parking.controller("parkingCtrl", function ($scope) {
         $scope.cars.push(car);
         delete $scope.car;
     };
+
+    $scope.$on("AlertBoxClosedHandler", function (event, message) {
+        alert(message);
+    });
 });

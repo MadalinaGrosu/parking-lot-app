@@ -11,7 +11,9 @@ parking.directive("alert", function () {
         link: function (scope, element, attrs, ctrl, transcludeFn) {
             element.bind("click", function () {
                 scope.$apply(function () {
+                    var message = "Alert box closed!"
                     scope.hideAlert = !scope.hideAlert;
+                    scope.$emit("AlertBoxClosedHandler", message);
                 });
             });
         }
