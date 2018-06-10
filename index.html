@@ -47,7 +47,9 @@
         </button>
     </body>
     <alert
+        ng-show="showAlert"
         topic="alertTopic"
-        description="descriptionTopic">
+        description="descriptionTopic"
+        close="closeAlert()">
     </alert>
 </html>
